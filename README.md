@@ -11,17 +11,30 @@ Analisis dilakukan menggunakan Python (pandas, seaborn, matplotlib) dan dashboar
 - `dashboard/hour.csv` — Dataset penyewaan sepeda per jam.
 - `requirements.txt` — Daftar library yang dibutuhkan.
 
+## ⚙️ Setup Environment
+### Via Anaconda
+```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+
+### Via Shell/Terminal
+```bash
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+
 ## Cara Menjalankan Dashboard
 1. Pastikan semua library dalam `requirements.txt` sudah terinstall.
 2. Jalankan perintah berikut di terminal: streamlit run dashboard/dashboard.py
 3. Dashboard akan terbuka di browser secara otomatis.
 
 ## Library yang Digunakan
-- pandas
-- matplotlib
-- seaborn
-- streamlit
-
-## Insight Singkat
-- Jumlah penyewaan sepeda meningkat di musim panas.
-- Pola penyewaan berbeda antara hari kerja dan hari libur, dengan puncak sewa terjadi pagi dan sore pada hari kerja, serta siang hari pada hari libur.
+1. pandas 2.2.2
+2. matplotlib 3.10.0
+3. seaborn 0.13.2
+4. streamlit 1.45.0
